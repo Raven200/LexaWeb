@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   PhoneIcon,
   CheckCircleIcon,
@@ -8,6 +7,7 @@ import {
   HomeIcon,
   StarIcon,
 } from "./icons";
+import { basePath } from "./config";
 
 export default function Home() {
   const phoneNumber = "+79208367592";
@@ -32,12 +32,11 @@ export default function Home() {
             {/* Photo */}
             <div className="mb-6 flex justify-center">
               <div className="relative h-36 w-36 overflow-hidden rounded-full border-4 border-white/30 shadow-xl sm:h-44 sm:w-44">
-                <Image
-                  src="/photo.jpg"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`${basePath}/photo.jpg`}
                   alt="Алексей Катюшин"
-                  fill
-                  className="object-cover"
-                  priority
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
