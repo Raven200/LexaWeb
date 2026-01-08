@@ -10,6 +10,7 @@ import {
   SquaresIcon,
 } from "./icons";
 import { basePath } from "./config";
+import Portfolio from "./Portfolio";
 
 export default function Home() {
   const phoneNumber = "+79208367592";
@@ -226,6 +227,22 @@ export default function Home() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-slate-900 sm:text-4xl">
+              Примеры работ
+            </h2>
+            <p className="text-lg text-slate-600">
+              Фотографии выполненных проектов
+            </p>
+          </div>
+
+          <Portfolio />
         </div>
       </section>
 
