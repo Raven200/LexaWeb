@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   PhoneIcon,
   CheckCircleIcon,
@@ -26,6 +27,19 @@ export default function Home() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm">
               <ClockIcon className="h-4 w-4" />
               <span>Более 20 лет опыта</span>
+            </div>
+
+            {/* Photo */}
+            <div className="mb-6 flex justify-center">
+              <div className="relative h-36 w-36 overflow-hidden rounded-full border-4 border-white/30 shadow-xl sm:h-44 sm:w-44">
+                <Image
+                  src="/photo.jpg"
+                  alt="Алексей Катюшин"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
 
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
