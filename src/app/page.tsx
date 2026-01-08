@@ -6,6 +6,8 @@ import {
   WrenchScrewdriverIcon,
   HomeIcon,
   StarIcon,
+  KeyIcon,
+  SquaresIcon,
 } from "./icons";
 import { basePath } from "./config";
 
@@ -166,6 +168,60 @@ export default function Home() {
                 <li className="flex items-start gap-2">
                   <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
                   Врезка замков и петель
+                </li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all hover:shadow-xl">
+              <div className="mb-4 inline-flex rounded-xl bg-amber-100 p-3 text-amber-600">
+                <KeyIcon className="h-8 w-8" />
+              </div>
+              <h3 className="mb-3 text-xl font-bold text-slate-900">
+                Электронные замки
+              </h3>
+              <ul className="space-y-2 text-slate-600">
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Установка электронных замков
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Кодовые замки
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Замки с отпечатком пальца
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Настройка и программирование
+                </li>
+              </ul>
+            </div>
+
+            <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all hover:shadow-xl">
+              <div className="mb-4 inline-flex rounded-xl bg-amber-100 p-3 text-amber-600">
+                <SquaresIcon className="h-8 w-8" />
+              </div>
+              <h3 className="mb-3 text-xl font-bold text-slate-900">
+                Монтаж плинтуса
+              </h3>
+              <ul className="space-y-2 text-slate-600">
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Напольный плинтус
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Пластиковый и деревянный
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  МДФ плинтус
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircleIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                  Аккуратные стыки и углы
                 </li>
               </ul>
             </div>
